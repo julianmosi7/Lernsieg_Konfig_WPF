@@ -1,0 +1,13 @@
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\Lernsieg.mdf
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\Lernsieg_log.ldf
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\LernsiegModelLib.dll.config
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\LernsiegModelLib.dll
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\LernsiegModelLib.pdb
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\EntityFramework.dll
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\EntityFramework.xml
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\obj\Debug\LernsiegModelLib.csproj.CoreCompileInputs.cache
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\obj\Debug\LernsiegModelLib.csproj.CopyComplete
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\obj\Debug\LernsiegModelLib.dll
+C:\Users\mosha\Documents\Schule\5.Klasse\POS\Lernsieg_Konfig_WPF\LernsiegModelLib\obj\Debug\LernsiegModelLib.pdb

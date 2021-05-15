@@ -1,0 +1,83 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:LernsiegViewModelLib;assembly=LernsiegViewModelLib"
+        xmlns:local="clr-namespace:Lernsieg_Konfig_WPF"
+        xmlns:catel="http://schemas.catelproject.com" x:Class="Lernsieg_Konfig_WPF.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="692" Width="712"
+        Loaded="Window_Loaded">
+
+    <Window.DataContext>
+        <viewModels:LernsiegViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="453*"/>
+            <ColumnDefinition Width="289*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="734*"/>
+            <RowDefinition Height="179*"/>
+        </Grid.RowDefinitions>
+
+        <DataGrid Grid.Row="0" Grid.Column="0" 
+                  ItemsSource="{Binding Schools}"
+                  SelectedItem="{Binding SelectedSchool}"/>
+
+
+
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="128*"/>
+                <ColumnDefinition Width="307*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Schulkennzahl" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding SelectedSchool.Id}" Margin="3,3,3,3"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Land" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding SelectedSchool.Country}" Margin="3,3,3,3"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Schule" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedSchool.Name}" Margin="3,3,3,3"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Adresse" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedSchool.Address}" Margin="3,3,3,3"/>
+        </Grid>
+
+        <DataGrid Grid.Row="0" Grid.Column="1" ItemsSource="{Binding Teachers}"/>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="84*"/>
+                <ColumnDefinition Width="193*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Titel" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Margin="3,3,3,3" Text="{Binding NewTeacher.Title}" />
+            <Label Grid.Row="1" Grid.Column="0" Content="Name" Margin="3,3,3,3"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Margin="3,3,3,3" Text="{Binding NewTeacher.Name}"/>
+            <ComboBox Grid.Row="2" Grid.Column="1" Margin="3,3,3,3" ItemsSource="{Binding Schools}" IsSynchronizedWithCurrentItem="True" SelectedItem="{Binding NewTeacher.SchoolNumber}"/>
+            <Button Grid.Row="3" Grid.Column="1" Content="Add" Command="{Binding AddTeacher, Mode=OneWay}" Margin="3,3,3,3"/>
+        </Grid>
+
+
+    </Grid>
+</Window>

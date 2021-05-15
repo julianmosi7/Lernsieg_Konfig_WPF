@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Downloads\WPF_MVVM_Flugbuchung_incl_FlightsMdf\WPF_MVVM_Flugbuchung\MVVM.Tools\MVVM.Tools.csproj" />
+    <ProjectReference Include="..\..\Lernsieg\LernsiegDbLib\LernsiegDbLib.csproj" />
+  </ItemGroup>
+
+</Project>
